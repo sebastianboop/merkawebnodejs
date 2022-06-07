@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .head {
+    display: grid;
+    height: 100px;
+    background: linear-gradient(rgb(208,0,111), rgb(222,20,120));
+    grid-template:"logo     buscar     btn  empty volver" auto/
+                   10fr     1fr        1fr  10fr  1fr ;
+  }
+  .logo{
+      grid-area: logo;
+  }
+  .buscar {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .buscar input {
+    grid-area: buscar; 
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+  }
+  
+  .btn {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #440088;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    grid-area: btn;
+  }
+  
+  .buscar:hover input {
+    width: 240px;
+  }
+  
+  .buscar input:focus {
+    width: 240px;
+  }
+  .volver{
+      grid-area: volver;
+      float: right;
+  }
+
+
+
+  
+  .form-register {
+    width: 500px;
+    height: 430px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .select {
+    /*
+    grid-area: ubicacion;
+    position: relative;
+    border: 1px solid #ccc;
+    width: 120px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+  
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+  */
+  }
+    /*
+  .select:before {
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 5px 0 5px;
+      border-color: #000000 transparent transparent transparent;
+      z-index: 5;
+      pointer-events: none;
+  }
+   */ 
+  .select select {
+    /*
+      padding: 5px 8px;
+      width: 130%;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      appearance: none;*/
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+  }
+  .select select option{
+      border: none;
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+  }
+
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+.form-register .botons{
+  cursor: pointer;    
+  }
+
+
+
+
+
+  
+.footer{
+  /* display: grid;*/
+   background-color: rgb(80, 80, 80);
+   
+   height: 170px;
+   margin-bottom: 15px;
+   padding-bottom: 15px;
+
+}
+.basico{
+   display: grid;
+   grid-template: "empty contactanos cobertura preguntas vaciopues"auto/
+                   1fr   1fr         1fr       1fr       1fr;
+}
+.footer a, .footer label{
+   color: white;
+   text-decoration: none;
+   font-size: 1.2em;
+}
+
+.footer .iconos{
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+}
+.contactanos{
+grid-area: contactanos;
+}
+.cobertura{
+grid-area: cobertura;
+}
+.preguntas{
+grid-area: preguntas;
+}
+
+.contenidoredes{
+   padding-left: 25px;
+}
+.redessociales{
+grid-area: redessociales;
+}
+.face{
+grid-area: facebook;
+}
+.insta{
+grid-area: instagram;
+}
+.twi{
+grid-area: twitter;
+}
+.wha{
+grid-area: whatsapp;
+}
+.terminos{
+grid-area: terminos;
+}
+.subpie{
+   display: grid;
+   grid-template: "vacio1 terminos   contactodesarrollador vacio "auto/
+                   1fr    1fr        1fr                   1fr  ;
+   
+}
+.contactoDesarrollador{
+grid-area:contactodesarrollador;
+}

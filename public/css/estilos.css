@@ -1,0 +1,264 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    display: grid;
+    grid-template: "logo espacio ubicacion registro inicio"40px/
+                    1fr  5fr     1fr       1fr      1fr;
+}
+.logo{
+grid-area: logo;
+}
+.registroInicioSesion{
+grid-area: registro;
+}
+.inicioSesion{
+    grid-area: inicio;
+}
+.select {
+    grid-area: ubicacion;
+    position: relative;
+    border: 1px solid #ccc;
+    width: 120px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+    
+  .select:before {
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 5px 0 5px;
+      border-color: #000000 transparent transparent transparent;
+      z-index: 5;
+      pointer-events: none;
+  }
+    
+  .select select {
+      padding: 5px 8px;
+      width: 130%;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      appearance: none;
+  }
+  .select select option{
+      border: none;
+  }
+  .saludo{
+      background-color:rgb(238, 238, 246);
+      width: 100%;
+      height: 150px;
+  }
+  .saludo h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: rgb(208, 0, 111);
+    padding-top: 30px;
+  }
+  .saludo h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+  }
+
+  .espacio{
+      height: 90%;
+      margin: 100px auto;
+      padding: 100px auto;
+      height: 10px;
+      background-color: rgb(238, 238, 246,);
+      border-bottom: 2px solid rgb(238, 238, 246);
+  }
+.contentForte{
+    background-color: rgb(238, 238, 246);;
+}
+.productosdestacados{
+    margin-top: 30px;
+    padding-top: 30px;
+    height: auto;
+    display: grid;
+    grid-template: "empty producto1 producto2 producto3 producto4 vacio" 335px/
+                    1fr   2fr       2fr       2fr       2fr       1fr;
+    background-color:  rgb(238, 238, 246)
+}
+
+.producto{
+      background-color: rgb(250, 251, 252);
+      width: 250px;
+      height: 330px;
+      border: solid 1px black;
+      border-image: linear-gradient(to bottom, rgb(255,255,255) 0%, rgb(0,0,0) 100%) 1;
+      transition: .3s;
+}
+.producto:hover{
+      cursor: pointer;
+      background-color: rgb(222, 222, 246);
+      width: 255px;
+      height: 335px;
+}
+.productoindividual1{
+    grid-area: producto1;
+    display: inline-block;
+}
+.productoindividual2{
+    grid-area: producto2;
+    display: inline-block;
+}
+.productoindividual3{
+    grid-area: producto3;
+    display: inline-block;
+}
+.productoindividual4{
+    grid-area: producto4;
+    display: inline-block;  
+}
+.producto img{
+      width: 200px;
+      height: 175px;
+}
+
+
+
+.tiendassdestacados{
+    margin-top: 30px;
+    padding-top: 30px;
+    height: auto;
+    display: grid;
+    grid-template: "empty tienda1 tienda2 tienda3 tienda4 vacio" 335px/
+                    1fr   2fr     2fr     2fr     2fr     1fr;
+    background-color:  rgb(238, 238, 246)
+}
+.titulotiendas{
+    color: rgb(100, 100, 100);
+}
+.tiendas{
+      background-color: rgb(250, 251, 252);
+      width: 250px;
+      height: 330px;
+      border: solid 1px black;
+      border-image: linear-gradient(to bottom, rgb(255,255,255) 0%, rgb(0,0,0) 100%) 1;
+      transition: .3s;
+}
+.tiendas:hover{
+      cursor: pointer;
+      background-color: rgb(222, 222, 246);
+      width: 255px;
+      height: 335px;
+}
+.tiendaindividual1{
+    grid-area: tienda1;
+    display: inline-block;
+}
+.tiendaindividual2{
+    grid-area: tienda2;
+    display: inline-block;
+}
+.tiendaindividual3{
+    grid-area: tienda3;
+    display: inline-block;
+}
+.tiendaindividual4{
+    grid-area: tienda4;
+    display: inline-block;  
+}
+.tiendas img{
+      width: 200px;
+      height: 175px;
+}
+
+.linea{
+    height: 15px;
+    padding: 15px auto;
+    margin: 15px auto;
+    width: 90%;
+    border-bottom: 5px solid rgb(120, 121, 122);
+}
+
+
+.razones{
+    display: grid;
+    grid-template: "empty razon1 razon2 razon3 vacio"auto/
+                    1fr   2fr    2fr    2fr    1fr;
+}
+.razon{
+    margin-right: 16px;
+}
+.razon1{
+    grid-area: razon1;
+}
+.razon2{
+    grid-area: razon2;
+}
+.razon3{
+    grid-area: razon3;
+}
+.footer{
+   /* display: grid;*/
+    background-color: rgb(80, 80, 80);
+    
+    height: 150px;
+ 
+}
+.basico{
+    display: grid;
+    grid-template: "empty contactanos cobertura preguntas vaciopues"auto/
+                    1fr   1fr         1fr       1fr       1fr;
+}
+.footer a, .footer label{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer .iconos{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.contactanos{
+grid-area: contactanos;
+}
+.cobertura{
+grid-area: cobertura;
+}
+.preguntas{
+grid-area: preguntas;
+}
+
+.contenidoredes{
+    padding-left: 25px;
+}
+.redessociales{
+grid-area: redessociales;
+}
+.face{
+grid-area: facebook;
+}
+.insta{
+grid-area: instagram;
+}
+.twi{
+grid-area: twitter;
+}
+.wha{
+grid-area: whatsapp;
+}
+.terminos{
+grid-area: terminos;
+}
+.subpie{
+    display: grid;
+    grid-template: "vacio1 terminos   contactodesarrollador vacio "auto/
+                    1fr    1fr        1fr                   1fr  ;
+}
+.contactoDesarrollador{
+grid-area:contactodesarrollador;
+
+}
