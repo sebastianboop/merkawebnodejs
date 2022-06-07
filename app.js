@@ -19,7 +19,16 @@ servidor.get("/",(peticion,respuesta)=>{
 servidor.get("/registrarse",(peticion,respuesta)=>{
     respuesta.render('registrarse.ejs');
 })
-
+servidor.post("/ingresar",(peticion,respuesta)=>{
+    var tipousuario=peticion.body.select;
+    if(tipousuario=="opcion-1"){
+        respuesta.render("vistatienda.ejs")
+    }
+    if(tipousuario=="opcion-2"){
+        respuesta.render("vistausuario.ejs")
+    }
+    console.log(tipousuario);
+})
 servidor.get("/iniciarsesion",(peticion,respuesta)=>{
     respuesta.render('iniciarsesion.ejs')
 })
