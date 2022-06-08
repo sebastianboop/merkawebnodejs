@@ -32,6 +32,18 @@ servidor.post("/ingresar",(peticion,respuesta)=>{
 servidor.get("/iniciarsesion",(peticion,respuesta)=>{
     respuesta.render('iniciarsesion.ejs')
 })
+var datos=[
+    {
+        nombre:"usuario",
+        compras:"numero de compras",
+        valor:"valor",
+    }
+
+];
+servidor.get("/ventas",(peticion,respuesta)=>{
+    respuesta.send({lista:datos});
+})
 servidor.listen(3000,()=>{
     console.log("el servidor de merkaweb corre en el puerto 3000")
 });
+
