@@ -25,36 +25,16 @@ header label{
     padding-right: 30px;
     border-left: 1px solid white;
 }
-.cuerpo{
-    display: grid;
-    grid-template: "vacio ventas otrovacio productos vacioizq"auto/
-                    1fr   1fr    1fr       10fr       1fr;
-}
-.ventas{
-    width: 400px;
-    grid-area: ventas;
-    
-    box-shadow: 7px 13px 37px #000;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
 
-}
-.productos{
-    width: 700px;
-    grid-area: productos;
-    box-shadow: 7px 13px 37px #000;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-}
+
+
 table{
 	background-color: white;
 	text-align: left;
 	border-collapse: collapse;
 	width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th, td{
@@ -81,71 +61,72 @@ tr:hover td{
 
 
 
-  
+
+
+
+
 .footer{
     /* display: grid;*/
      background-color: rgb(80, 80, 80);
      
      height: 170px;
-     
-     
-     bottom: 0;
+     margin-bottom: 15px;
+     padding-bottom: 15px;
   
-  }
-  .basico{
+ }
+ .basico{
      display: grid;
      grid-template: "empty contactanos cobertura preguntas vaciopues"auto/
                      1fr   1fr         1fr       1fr       1fr;
-  }
-  .footer a, .footer label{
+ }
+ .footer a, .footer label{
      color: white;
      text-decoration: none;
      font-size: 1.2em;
-  }
-  
-  .footer .iconos{
+ }
+ 
+ .footer .iconos{
      display: inline-block;
      width: 30px;
      height: 30px;
-  }
-  .contactanos{
-  grid-area: contactanos;
-  }
-  .cobertura{
-  grid-area: cobertura;
-  }
-  .preguntas{
-  grid-area: preguntas;
-  }
-  
-  .contenidoredes{
+ }
+ .contactanos{
+ grid-area: contactanos;
+ }
+ .cobertura{
+ grid-area: cobertura;
+ }
+ .preguntas{
+ grid-area: preguntas;
+ }
+ 
+ .contenidoredes{
      padding-left: 25px;
-  }
-  .redessociales{
-  grid-area: redessociales;
-  }
-  .face{
-  grid-area: facebook;
-  }
-  .insta{
-  grid-area: instagram;
-  }
-  .twi{
-  grid-area: twitter;
-  }
-  .wha{
-  grid-area: whatsapp;
-  }
-  .terminos{
-  grid-area: terminos;
-  }
-  .subpie{
+ }
+ .redessociales{
+ grid-area: redessociales;
+ }
+ .face{
+ grid-area: facebook;
+ }
+ .insta{
+ grid-area: instagram;
+ }
+ .twi{
+ grid-area: twitter;
+ }
+ .wha{
+ grid-area: whatsapp;
+ }
+ .terminos{
+ grid-area: terminos;
+ }
+ .subpie{
      display: grid;
      grid-template: "vacio1 terminos   contactodesarrollador vacio "auto/
                      1fr    1fr        1fr                   1fr  ;
      
-  }
-  .contactoDesarrollador{
-  grid-area:contactodesarrollador;
-  }
-  
+ }
+ .contactoDesarrollador{
+ grid-area:contactodesarrollador;
+ }

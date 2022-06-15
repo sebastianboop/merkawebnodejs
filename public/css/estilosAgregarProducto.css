@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+header{
+    background: linear-gradient(rgb(208,0,111), rgb(222,20,120));
+    height: 100px;
+    margin-bottom: 50px;
+    
+}
+header a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid white;
+}
+header label{
+    font-size: 1.2em;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid white;
+}
+
+
+/*estilos agregar producto*/
+.contenedorProducto{
+    display: grid;
+    grid-template: "agregarImagen   nombre      "auto
+                   "agregarImagen   precio      "auto
+                   "agregarImagen   descripcion "auto
+                   "agregarImagen   categoria   "auto
+                   "agregarImagen   domicilio   "auto
+                   "agregarImagen   vacio       "auto/
+                    auto             1fr     ;
+    background-color: rgba(96, 96, 96,.2);
+
+}
+.agregarImagen{
+    grid-area: agregarImagen;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(150, 150, 150);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.agregarImagen .input{
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.nombre{
+    grid-area: nombre;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10px; 
+    
+}
+.precio{
+    grid-area: precio;
+    height: 35px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10px; 
+}
+.descripcion{
+    grid-area: descripcion;
+    height: 35px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10px; 
+}
+.categoria{
+    grid-area: categoria;
+    height: 35px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10px; 
+}
+.domicilio{
+    grid-area: domicilio;
+    height: 35px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10px; 
+}
+.botons {
+    width: 80%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+
+/*estilos Fotter*/
+
+.footer{
+    /* display: grid;*/
+     background-color: rgb(80, 80, 80);
+     
+     height: 170px;
+     margin-bottom: 15px;
+     padding-bottom: 15px;
+  
+ }
+ .basico{
+     display: grid;
+     grid-template: "empty contactanos cobertura preguntas vaciopues"auto/
+                     1fr   1fr         1fr       1fr       1fr;
+ }
+ .footer a, .footer label{
+     color: white;
+     text-decoration: none;
+     font-size: 1.2em;
+ }
+ 
+ .footer .iconos{
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+ }
+ .contactanos{
+ grid-area: contactanos;
+ }
+ .cobertura{
+ grid-area: cobertura;
+ }
+ .preguntas{
+ grid-area: preguntas;
+ }
+ 
+ .contenidoredes{
+     padding-left: 25px;
+ }
+ .redessociales{
+ grid-area: redessociales;
+ }
+ .face{
+ grid-area: facebook;
+ }
+ .insta{
+ grid-area: instagram;
+ }
+ .twi{
+ grid-area: twitter;
+ }
+ .wha{
+ grid-area: whatsapp;
+ }
+ .terminos{
+ grid-area: terminos;
+ }
+ .subpie{
+     display: grid;
+     grid-template: "vacio1 terminos   contactodesarrollador vacio "auto/
+                     1fr    1fr        1fr                   1fr  ;
+     
+ }
+ .contactoDesarrollador{
+ grid-area:contactodesarrollador;
+ }
+ 

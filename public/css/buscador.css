@@ -1,0 +1,31 @@
+.buscador form{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: 1px solid rgb(96, 96, 96);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+.buscador form select{
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.buscador form select option{
+    padding: 10px;
+}
+.buscador form input{
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    background-color: rgb(50, 90, 255);
+    border-radius: 10px;
+    border: 1px solid white;
+    font-weight: 700;
+    color: white;
+}
+.buscador form input:hover{
+    cursor: pointer;
+}
