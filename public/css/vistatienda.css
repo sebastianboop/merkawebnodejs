@@ -18,6 +18,9 @@ header a{
     padding-right: 30px;
     border-left: 1px solid white;
 }
+/*.cerrarsesion{
+    margin-left: 320px;
+}
 header label{
     font-size: 1.2em;
     color: white;
@@ -84,7 +87,7 @@ tr:hover td{
   
 .footer{
     /* display: grid;*/
-     background-color: rgb(80, 80, 80);
+     /*background-color: rgb(80, 80, 80);
      
      height: 170px;
      
@@ -147,5 +150,43 @@ tr:hover td{
   }
   .contactoDesarrollador{
   grid-area:contactodesarrollador;
-  }
+  }*/
+
+  ul {
+    list-style: none;
+    text-align: right;
+}
+li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    transition: all .5s;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+/* .sub-items {
+    display: none;
+    position: absolute;
+} */
+li:hover .children {
+    display: block;
+    position: absolute;
+    width: 100px;
+}
+.children li {
+    display: block;
+    background-color: rgb(239,82,42);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(255,255,255,.5);
+}
+li .children {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
   
