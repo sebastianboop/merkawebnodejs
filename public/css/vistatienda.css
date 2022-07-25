@@ -1,160 +1,80 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-header{
-    background: linear-gradient(rgb(208,0,111), rgb(222,20,120));
-    height: 100px;
-    margin-bottom: 50px;
-    
 }
-header a{
-    text-decoration: none;
-    font-size: 1.2em;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-left: 1px solid white;
-}
-/*.cerrarsesion{
-    margin-left: 320px;
-}
-header label{
-    font-size: 1.2em;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-left: 1px solid white;
-}
-.cuerpo{
-    display: grid;
-    grid-template: "vacio ventas otrovacio productos vacioizq"auto/
-                    1fr   1fr    1fr       10fr       1fr;
-}
-.ventas{
-    width: 400px;
-    grid-area: ventas;
-    
-    box-shadow: 7px 13px 37px #000;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-
-}
-.productos{
-    width: 700px;
-    grid-area: productos;
-    box-shadow: 7px 13px 37px #000;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-}
-table{
-	background-color: white;
-	text-align: left;
-	border-collapse: collapse;
-	width: 70%;
-}
-
-th, td{
-	padding: 20px;
-}
-
-thead{
-	background-color: #246355;
-	border-bottom: solid 5px #0F362D;
-	color: white;
-}
-
-tr:nth-child(even){
-	background-color: #ddd;
-}
-
-tr:hover td{
-	background-color: #369681;
-	color: white;
+body{
+    background-color: #ffffff;
 }
 
 
+.icono-menu{
+    margin: 40px 50px;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(172, 32, 32);
+    margin: 0;
+    height: 60px;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 30px;
+    cursor: pointer;
+}
+img{
+    margin-left: 50px;
+    margin-top: 20px;
+}
 
 
+.cont-menu{
+    background-color: rgb(172, 32, 32);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
 
 
-  
-.footer{
-    /* display: grid;*/
-     /*background-color: rgb(80, 80, 80);
-     
-     height: 170px;
-     
-     
-     bottom: 0;
-  
-  }
-  .basico{
-     display: grid;
-     grid-template: "empty contactanos cobertura preguntas vaciopues"auto/
-                     1fr   1fr         1fr       1fr       1fr;
-  }
-  .footer a, .footer label{
-     color: white;
-     text-decoration: none;
-     font-size: 1.2em;
-  }
-  
-  .footer .iconos{
-     display: inline-block;
-     width: 30px;
-     height: 30px;
-  }
-  .contactanos{
-  grid-area: contactanos;
-  }
-  .cobertura{
-  grid-area: cobertura;
-  }
-  .preguntas{
-  grid-area: preguntas;
-  }
-  
-  .contenidoredes{
-     padding-left: 25px;
-  }
-  .redessociales{
-  grid-area: redessociales;
-  }
-  .face{
-  grid-area: facebook;
-  }
-  .insta{
-  grid-area: instagram;
-  }
-  .twi{
-  grid-area: twitter;
-  }
-  .wha{
-  grid-area: whatsapp;
-  }
-  .terminos{
-  grid-area: terminos;
-  }
-  .subpie{
-     display: grid;
-     grid-template: "vacio1 terminos   contactodesarrollador vacio "auto/
-                     1fr    1fr        1fr                   1fr  ;
-     
-  }
-  .contactoDesarrollador{
-  grid-area:contactodesarrollador;
-  }*/
+.active{
+    transform: translate(-600px);
+}
 
-  ul {
+
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
     list-style: none;
-    text-align: right;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
+.linea{
+    border-bottom: 5px solid black;
+    margin-left: 20px;
+}
+.content-main{
+
+    position: relative;
+    margin-left: 500px;
+}
+.salir{
+    margin-top: 150px;
+    
 }
 li {
     display: inline-block;
@@ -162,15 +82,6 @@ li {
     position: relative;
     transition: all .5s;
 }
-a {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
-/* .sub-items {
-    display: none;
-    position: absolute;
-} */
 li:hover .children {
     display: block;
     position: absolute;
@@ -187,6 +98,8 @@ li:hover .children {
 li .children {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 101%;
 }
-  
+.item-horizontal{
+    margin-left: 1050px;
+}
